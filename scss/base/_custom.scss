@@ -1,15 +1,46 @@
 .customer-reviews{
-//&__img{}
 
+&__box{
+        display: flex;
+        flex-direction: column;}
+&__img{
+    margin-right: auto;
+    margin-left: auto;}
+
+ &__points{
+display: flex;
+justify-content: center;}
+
+&__item{
+width: 4px;
+height: 4px;
+border-radius: 50%;
+background-color: #C7133E;
+margin-left: 10px;}
+
+&__tumb{
+background-color: #FAFAFA;
+padding: 43px 50px 17px 50px;}
 
 &__text{
+    padding: 0px 8px 0px 15px;
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
-    /* or 31px */
-
     text-align: center;
+    color: #000000; 
+    background-image: repeating-linear-gradient(
+       #FAFAFA,
+       #FAFAFA 29px,
+       #E1E1E1 30px,
+       #E1E1E1 10px); }
 
-    color: #000000;
-}
+&__text::before {
+    content: '';
+   background-image: url("./images/testimonials1 1.jpg");
+    }
+
+&__name{
+text-align: center;}
+
 }

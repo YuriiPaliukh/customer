@@ -154,11 +154,42 @@ img {
   overflow: hidden;
 }
 
+.customer-reviews__box {
+  display: flex;
+  flex-direction: column;
+}
+.customer-reviews__img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.customer-reviews__points {
+  display: flex;
+  justify-content: center;
+}
+.customer-reviews__item {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #C7133E;
+  margin-left: 10px;
+}
+.customer-reviews__tumb {
+  background-color: #FAFAFA;
+  padding: 43px 50px 17px 50px;
+}
 .customer-reviews__text {
+  padding: 0px 8px 0px 15px;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
-  /* or 31px */
   text-align: center;
   color: #000000;
+  background-image: repeating-linear-gradient(#FAFAFA, #FAFAFA 29px, #E1E1E1 30px, #E1E1E1 10px);
+}
+.customer-reviews__text::before {
+  content: "";
+  background-image: url("./images/testimonials1 1.jpg");
+}
+.customer-reviews__name {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
